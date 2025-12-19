@@ -5,7 +5,7 @@ Launch local copy with the following command:
 npm run dev --- --host
 ```
 
-## 🚀 Project Structure
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
