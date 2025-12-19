@@ -1,0 +1,23 @@
+---
+import type { APIRoute } from "astro"
+
+export const POST: APIRoute = async ({ request }) => {
+    const data = await request.formData();
+    const newsletter = data.get("newsletter");
+    console.log(newsletter)
+
+    return new Response(
+        JSON.stringify({
+            message: "Success!"
+        }),
+        { status: 200 }
+    )
+}
+---
+
+<section class="p-24">
+    <h2 class="text-5xl font-thin text-center">Subscribe To Our Newsletter!</h2>
+    <form method="post">
+        <input type="text" name="newsletter" class="border" />
+    </form>
+</section>
