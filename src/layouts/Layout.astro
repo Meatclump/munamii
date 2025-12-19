@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -10,8 +10,12 @@ import '../styles/global.css'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Munamii Cakery</title>
+		<meta
+			name="description"
+			content="Make Munamii Cakery your one-stop shop for delicious cakes, pastries and other baked goods!"
+		/>
 	</head>
-	<body>
+	<body class="flex flex-col min-h-screen font-[Poiret_One]">
 		<slot />
 	</body>
 </html>
