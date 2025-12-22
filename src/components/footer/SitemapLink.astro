@@ -1,0 +1,8 @@
+---
+import { cn } from "../../util/cn"
+const { classes, url } = Astro.props
+---
+
+<a class={cn("p-1 hover:text-stone-400 motion-safe:transition-colors", classes)} href={url}>
+    <slot />
+</a>

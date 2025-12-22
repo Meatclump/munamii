@@ -1,0 +1,27 @@
+---
+import Card from "./Card.astro";
+import { products } from "./products"
+---
+
+<main class="flex-1 p-24 bg-slate-200/80">
+    <h1 class="text-6xl font-thin text-center mb-12">Products</h1>
+    <div class="bg-slate-50 w-full p-24 grid grid-cols-4 gap-16">
+        <div class="col-span-4">
+            <h2 class="text-3xl border-b-2 border-sky-900 text-sky-900 pb-3">Cakes</h2>
+        </div>
+         {
+            products.filter(product => product.type === "cake").map(product => {
+                console.log(product)
+                return <Card name={product.name} src={product.src} />
+            })
+         }
+        <div class="col-span-4">
+            <h2 class="text-3xl border-b-2 border-sky-900 text-sky-900 pb-3">Cupcakes</h2>
+        </div>
+         {
+            products
+                .filter(product => product.type === "cupcake")
+                .map(product => <Card name={product.name} src={product.src} />)
+         }
+    </div>
+</main>

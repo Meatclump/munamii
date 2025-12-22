@@ -1,14 +1,19 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Welcome from '../components/Welcome.astro';
+import Header from '../components/header/Header.astro';
+import Footer from '../components/footer/Footer.astro';
+import Welcome from '../components/frontpage/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Newsletter from '../components/Newsletter.astro';
+import Banner from '../components/frontpage/Banner.astro';
+import ProductsCTA from '../components/frontpage/ProductsCTA.astro';
 ---
 
 <Layout>
 	<Header />
+	<Banner classes="h-75" src="/public/banner2.jpg" />
 	<Welcome />
+	<ProductsCTA />
+	<Banner classes="h-75" src="/public/banner1.jpg" />
 	<Newsletter />
 	<Footer />
 </Layout>

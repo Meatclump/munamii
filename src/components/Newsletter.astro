@@ -1,23 +1,12 @@
----
-import type { APIRoute } from "astro"
-
-export const POST: APIRoute = async ({ request }) => {
-    const data = await request.formData();
-    const newsletter = data.get("newsletter");
-    console.log(newsletter)
-
-    return new Response(
-        JSON.stringify({
-            message: "Success!"
-        }),
-        { status: 200 }
-    )
-}
----
-
-<section class="p-24">
-    <h2 class="text-5xl font-thin text-center">Subscribe To Our Newsletter!</h2>
-    <form method="post">
-        <input type="text" name="newsletter" class="border" />
+<section class="p-24 bg-slate-200">
+    <h2 class="text-5xl mb-6 font-thin text-center">Subscribe To Our Newsletter</h2>
+    <p class="text-2xl mb-6 text-center">
+        Don't miss out on our latest creations and deals. Sign up now to stay informed!
+    </p>
+    <form method="post" class="flex justify-center">
+        <input type="text" name="newsletter" class="bg-slate-50 border border-sky-900 px-6 py-3" />
+        <button type="button" class="bg-sky-900 text-slate-50 px-8 py-3 active:bg-sky-800 hover:bg-sky-700">
+            Sign Up
+        </button>
     </form>
 </section>
