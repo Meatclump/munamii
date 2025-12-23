@@ -2,109 +2,97 @@ export const products = [
     {
         id: "001",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner2.jpg"
+        name: "Caramel Cake",
+        src: "/cakes/caramel-cake.jpg"
     },
     {
         id: "002",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner1.jpg"
+        name: "Cheesecake",
+        src: "/cakes/cheesecake.jpg"
     },
     {
         id: "003",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner3.jpg"
+        name: "Chocolate Cake",
+        src: "/cakes/chocolate-cake.jpg"
     },
     {
         id: "004",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner2.jpg"
+        name: "Graham Cake",
+        src: "/cakes/graham-cake.jpg"
     },
     {
         id: "005",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner1.jpg"
+        name: "Red Velvet Cake",
+        src: "/cakes/red-velvet-cake.jpg"
     },
     {
         id: "006",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner3.jpg"
+        name: "Roll Cake",
+        src: "/cakes/roll-cake.jpg"
     },
     {
         id: "007",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner2.jpg"
+        name: "Strawberry Cake",
+        src: "/cakes/strawberry-cake.jpg"
     },
     {
         id: "008",
         type: "cake",
-        name: "Product Name",
-        src: "/public/banner1.jpg"
-    },
-    {
-        id: "018",
-        type: "cake",
-        name: "Product Name",
-        src: "/public/banner3.jpg"
+        name: "Wedding Cake",
+        src: "/cakes/wedding-cake.jpg"
     },
     {
         id: "009",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner3.jpg"
+        name: "Birthday Cupcake",
+        src: "/cupcakes/birthday-cupcake.jpg"
     },
     {
         id: "010",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner2.jpg"
+        name: "Blueberry Cupcake",
+        src: "/cupcakes/blueberry-cupcake.jpg"
     },
     {
         id: "011",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner1.jpg"
+        name: "Blue Cupcake",
+        src: "/cupcakes/blue-cupcake.jpg"
     },
     {
         id: "012",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner3.jpg"
+        name: "Chocolate Cupcake",
+        src: "/cupcakes/chocolate-cupcake.jpg"
     },
     {
         id: "013",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner2.jpg"
+        name: "Halloween Cupcake",
+        src: "/cupcakes/halloween-cupcake.jpg"
     },
     {
         id: "014",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner1.jpg"
+        name: "Orange Cupcake",
+        src: "/cupcakes/orange-cupcake.jpg"
     },
     {
         id: "015",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner3.jpg"
+        name: "Oreo Cupcake",
+        src: "/cupcakes/oreo-cupcake.jpg"
     },
     {
         id: "016",
         type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner2.jpg"
-    },
-    {
-        id: "017",
-        type: "cupcake",
-        name: "Product Name",
-        src: "/public/banner1.jpg"
+        name: "Strawberry Cupcake",
+        src: "/cupcakes/strawberry-cupcake.jpg"
     },
 ]
