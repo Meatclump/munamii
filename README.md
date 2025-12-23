@@ -12,15 +12,45 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   ├── images
+│   │   ├── favicon.png
+│   │   ├── logo.png
+│   │   ├── ...
+│   │   ├── cakes
+│   │   │   └── ...
+│   │   └── cupcakes
+│   │       └── ...
 ├── src
-│   ├── assets
-│   │   └── astro.svg
 │   ├── components
-│   │   └── Welcome.astro
+│   │   ├── contact
+│   │   │   └── Contact.astro
+│   │   ├── footer
+│   │   │   ├── Footer.astro
+│   │   │   ├── SitemapLink.astro
+│   │   │   └── SocialLink.astro
+│   │   ├── frontpage
+│   │   │   ├── Banner.astro
+│   │   │   ├── ProductsCTA.astro
+│   │   │   └── Welcome.astro
+│   │   ├── header
+│   │   │   ├── Header.astro
+│   │   │   └── NavItem.astro
+│   │   ├── products
+│   │   │   ├── Card.astro
+│   │   │   ├── Products.astro
+│   │   │   └── products.js
+│   │   ├── AboutUs.astro
+│   │   └── Newsletter.astro
 │   ├── layouts
 │   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   ├── pages
+│   │   ├── about.astro
+│   │   ├── contact.astro
+│   │   ├── index.astro
+│   │   └── products.astro
+│   ├── styles
+│   │   └── global.css
+│   └── util
+│       └── cn.ts
 └── package.json
 ```
