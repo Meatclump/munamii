@@ -6,14 +6,17 @@ import Layout from '../layouts/Layout.astro';
 import Newsletter from '../components/Newsletter.astro';
 import Banner from '../components/frontpage/Banner.astro';
 import ProductsCTA from '../components/frontpage/ProductsCTA.astro';
+import { cn } from '../util/cn';
 ---
 
 <Layout>
 	<Header />
-	<Banner classes="h-75" src="/public/banner2.jpg" />
+	<!-- <Banner classes="h-75" src="/banner2.jpg" /> -->
+	<div class={cn(`w-full h-75 overflow-hidden bg-[url(/banner2.jpg)] bg-cover bg-center`)}></div>
 	<Welcome />
 	<ProductsCTA />
-	<Banner classes="h-75" src="/public/banner1.jpg" />
+	<!-- <Banner classes="h-75" src="/banner1.jpg" /> -->
+	<div class={cn(`w-full h-75 overflow-hidden bg-[url(/banner1.jpg)] bg-cover bg-center`)}></div>
 	<Newsletter />
 	<Footer />
 </Layout>
