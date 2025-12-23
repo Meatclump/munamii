@@ -11,7 +11,6 @@ import { products } from "./products"
         </div>
          {
             products.filter(product => product.type === "cake").map(product => {
-                console.log(product)
                 return <Card name={product.name} src={product.src} />
             })
          }
