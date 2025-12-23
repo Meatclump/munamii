@@ -2,7 +2,7 @@
 
 Launch local copy with the following command:
 ```sh
-npm run dev --- --host
+npm run dev
 ```
 
 ## Project Structure
