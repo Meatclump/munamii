@@ -4,18 +4,18 @@ import { products } from "./products"
 ---
 
 <main class="flex-1 p-24 bg-slate-200/80">
-    <h1 class="text-6xl font-thin text-center mb-12">Products</h1>
-    <div class="bg-slate-50 w-full p-24 grid grid-cols-4 gap-16">
-        <div class="col-span-4">
-            <h2 class="text-3xl border-b-2 border-sky-900 text-sky-900 pb-3">Cakes</h2>
+    <h1 class="text-2xl md:text-4xl xl:text-6xl mb-6 xl:mb-12 font-thin text-center">Products</h1>
+    <div class="bg-slate-50 w-full p-12 xl:p-24 grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 xl:gap-16">
+        <div class="col-span-1 lg:col-span-2 xl:col-span-3 2xl:col-span-4">
+            <h2 class="text-xl 2xl:text-2xl border-b-2 border-sky-900 text-sky-900 pb-3">Cakes</h2>
         </div>
          {
             products.filter(product => product.type === "cake").map(product => {
                 return <Card name={product.name} src={product.src} />
             })
          }
-        <div class="col-span-4">
-            <h2 class="text-3xl border-b-2 border-sky-900 text-sky-900 pb-3">Cupcakes</h2>
+        <div class="col-span-1 lg:col-span-2 xl:col-span-3 2xl:col-span-4">
+            <h2 class="text-xl 2xl:text-2xl border-b-2 border-sky-900 text-sky-900 pb-3">Cupcakes</h2>
         </div>
          {
             products
