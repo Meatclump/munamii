@@ -3,6 +3,6 @@ import { cn } from "../../util/cn"
 
 const { classes, url } = Astro.props
 ---
-<a class={cn("py-6 px-3", classes)} href={url}>
+<a class={cn("py-1 xl:py-6 px-3 border-b-2 border-transparent hover:text-stone-600 hover:border-stone-500 motion-safe:transition-colors", classes)} href={url}>
     <slot />
 </a>
